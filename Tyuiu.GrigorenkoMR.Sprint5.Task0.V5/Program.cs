@@ -33,13 +33,11 @@ namespace Tyuiu.GrigorenkoMR.Sprint5.Task0.V5
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            // Вызываем метод и получаем путь к файлу
             string res = ds.SaveToFileTextData(x);
 
             Console.WriteLine("Файл: " + res);
             Console.WriteLine("Создан!");
 
-            // Дополнительно выведем содержимое файла на консоль, чтобы было видно результат
             Console.WriteLine("Значение в файле: " + System.IO.File.ReadAllText(res));
 
             Console.ReadKey();
